@@ -4,7 +4,7 @@ import string
 
 import pytest
 from easyverein import EasyvereinAPI
-from easyverein.models import CustomFieldCreate, BookingProjectCreate, BookingProject
+from easyverein.models import BookingProjectCreate, CustomFieldCreate
 
 
 @pytest.fixture(scope="session")
@@ -39,12 +39,12 @@ def example_custom_field(ev_connection):
 def example_booking_project(ev_connection):
     booking_project = ev_connection.booking_project.create(
         BookingProjectCreate(
-            name="Test-Project", 
+            name="Test-Project",
             color="#23985d",
             short="5001",
             budget="0.00",
             completed=False,
-            projectCostCentre="90001"
+            projectCostCentre="90001",
         )
     )
     yield booking_project

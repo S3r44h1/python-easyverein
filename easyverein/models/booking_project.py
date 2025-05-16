@@ -37,7 +37,7 @@ class BookingProject(BookingProjectBase, EmptyStringsToNone):
 
 class BookingProjectCreate(
     BookingProjectBase,
-    required_mixin(["name"]),  
+    required_mixin(["name"]),
 ):
     """
     Pydantic model for creating a BookingProject
