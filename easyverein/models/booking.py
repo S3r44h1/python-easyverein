@@ -28,12 +28,12 @@ class BookingBase(EasyVereinBase):
     date: DateTime | None = None
     receiver: str | None = None
     billingId: str | None = None
-    blocked: bool | None = None
+    blocked: bool | None = None   
     paymentDifference: float | None = None
     counterpartIban: str | None = None
     counterpartBic: str | None = None
     twingleDonation: bool | None = None
-    bookingProject: str | None = None
+    bookingProject: EasyVereinReference | None = None
     sphere: int | None = None
     relatedInvoice: list[EasyVereinReference] | None = None
 
