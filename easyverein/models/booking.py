@@ -28,7 +28,7 @@ class BookingBase(EasyVereinBase):
     date: DateTime | None = None
     receiver: str | None = None
     billingId: str | None = None
-    blocked: bool | None = None   
+    blocked: bool | None = None
     paymentDifference: float | None = None
     counterpartIban: str | None = None
     counterpartBic: str | None = None
