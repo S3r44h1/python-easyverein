@@ -19,7 +19,7 @@ class BookingBase(EasyVereinBase):
     | `Booking` | `BookingUpdate` | `BookingCreate` |
     """
 
-    amount: float | None = None    # TODO: Add reference to BankAccount once implemented
+    amount: float | None = None  # TODO: Add reference to BankAccount once implemented
     bankAccount: EasyVereinReference | None = None
     # TODO: Add reference to BillingAccount once implemented
     billingAccount: EasyVereinReference | None = None
@@ -35,7 +35,6 @@ class BookingBase(EasyVereinBase):
     twingleDonation: bool | None = None
     sphere: int | None = None
     relatedInvoice: list[EasyVereinReference] | None = None
-
 
 
 class Booking(BookingBase, EmptyStringsToNone):
