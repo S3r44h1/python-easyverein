@@ -11,7 +11,7 @@ from ..models.booking_project import (
 from .mixins.crud import CRUDMixin
 
 
-class BookingProjectModule(CRUDMixin):
+class BookingProjectMixin(CRUDMixin):
     """
     Module for interacting with BookingProject API endpoints
     """
