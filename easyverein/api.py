@@ -58,7 +58,6 @@ class EasyvereinAPI:
         self.auto_refresh_token = auto_refresh_token
         self.c = EasyvereinClient(api_key, api_version, base_url, self.logger, self, auto_retry)
 
-  
         # Add methods
         self.booking = BookingMixin(self.c, self.logger)
         self.contact_details = ContactDetailsMixin(self.c, self.logger)
